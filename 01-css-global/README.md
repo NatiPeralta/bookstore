@@ -1,12 +1,32 @@
-# React + Vite
+# Bookstore 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Implementação de uma mesma tela de loja de livros em **4 versões diferentes**:
 
-Currently, two official plugins are available:
+1. **CSS Global**  
+2. **CSS Modules**  
+3. **Tailwind CSS**  
+4. **styled-components**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- Navbar fixa com logo, tema claro/escuro (persistente) e badge do carrinho
+- Grid responsivo de produtos (cards de livros)
+- Cards com título, preço, rating, tags e botão "Adicionar"
+- Interações: hover, focus, disabled, loading (skeleton)
+- Acessibilidade com `aria-*` e contraste AA (≥ 4.5:1)
+- Dark mode aplicado a cores e sombras
+- Animações suaves (150–250ms)
 
-## Expanding the ESLint configuration
+## Estrutura
+Cada pasta (`01-css-global/`, `02-css-modules/`, `03-tailwind/`, `04-styled-components/`) é um projeto React independente com os mesmos componentes básicos:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `Navbar`
+- `ProductCard`
+- `Button`
+- `Skeleton`
+
+## Como rodar
+Entre em cada pasta e execute:
+
+```bash
+npm install
+npm run dev
