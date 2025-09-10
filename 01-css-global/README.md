@@ -1,4 +1,4 @@
-# Bookstore 🎨
+# Bookstore
 
 Implementação de uma mesma tela de loja de livros em **4 versões diferentes**:
 
