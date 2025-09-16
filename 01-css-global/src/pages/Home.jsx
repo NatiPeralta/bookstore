@@ -1,10 +1,8 @@
-function Home() {
-  return (
-    <div>
-      <h1>Bem-vindo à Bookstore</h1>
-      {/* Aqui vai o grid de produtos depois */}
-    </div>
-  );
+export default function Home() {
+    return (
+        <main>
+            <h1>Bookstore</h1>
+            <p>Bem-vindo(a) á nossa livraria online!</p>
+        </main>
+    );
 }
-
-export default Home;
