@@ -12,28 +12,27 @@
   color: var(--text-color);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .brand a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: inherit; /* mantém a cor herdada */
+  color: inherit;
 }
 
 .logo {
   width: 40px;
   height: auto;
-  color: #222222; /* tema claro */
-}
-
-.dark .logo {
-  color: #faf6f1; /* tema escuro */
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 .actions {
@@ -43,18 +42,18 @@
 }
 
 .theme-toggle {
-  background: none;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border: 1px solid var(--text-color);
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  color: var(--text-color);
+  transition: background-color 0.25s, color 0.25s, transform 0.2s;
 }
 
 .theme-toggle:hover {
-  background: rgba(0,0,0,0.1);
   transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .cart {
@@ -78,20 +77,20 @@
 :root {
   --bg-color: #faf6f1;
   --text-color: #222222;
+  --button-bg: #222222;
+  --button-text: #faf6f1;
 }
 
 body.light {
   --bg-color: #faf6f1;
   --text-color: #222222;
+  --button-bg: #222222;
+  --button-text: #faf6f1;
 }
 
 body.dark {
   --bg-color: #222222;
   --text-color: #faf6f1;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.25s, color 0.25s; /* animação suave */
+  --button-bg: #faf6f1;
+  --button-text: #222222;
 }
