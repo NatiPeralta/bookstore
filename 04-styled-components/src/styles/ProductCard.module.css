@@ -1,0 +1,105 @@
+.productCard {
+  background-color: var(--bg-color-card);
+  color: var(--text-color-card);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.productImage {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.productTitle {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.productPrice {
+  margin: 0.25rem 0;
+  font-weight: bold;
+}
+
+.productTag {
+  margin: 0.25rem 0;
+  padding: 0.2rem 0.5rem;
+  background-color: #ff9800;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+
+.productRating {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #ffb400;
+  text-align: center;
+}
+
+.addButton {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.addButton:focus {
+  outline: 2px solid #ff9800;
+  outline-offset: 2px;
+}
+
+/* ------------------- TEMAS ------------------- */
+body.light {
+  --bg-color-card: #ffffff;
+  --text-color-card: #222222;
+  --button-bg: #222;
+  --button-text: #faf6f1;
+  --skeleton-bg: #ddd;
+}
+
+body.dark {
+  --bg-color-card: #333333;
+  --text-color-card: #faf6f1;
+  --button-bg: #faf6f1;
+  --button-text: #222;
+  --skeleton-bg: #555;
+}
+
+body.dark .productRating {
+  color: #ffd54f;
+}
+
+.addButton:hover {
+  background-color: #444;
+}
+
+body.dark .addButton:hover {
+  background-color: var(--skeleton-bg);
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
