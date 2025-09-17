@@ -1,16 +1,17 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --bg-color-card: #ffffff;
+  --text-color-card: #222222;
+  --button-bg: #222;
+  --button-text: #faf6f1;
+  --skeleton-bg: #ddd;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body.dark {
+  --bg-color-card: #333333;
+  --text-color-card: #faf6f1;
+  --button-bg: #faf6f1;
+  --button-text: #222;
+  --skeleton-bg: #555;
 }
 
 a {
