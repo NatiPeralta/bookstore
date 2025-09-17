@@ -33,7 +33,13 @@ export default function Navbar() {
       <div className="flex items-center gap-4">
         <button
             onClick={toggleTheme}
-            className="px-3 py-1 rounded border border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 transition-colors duration-200"
+            className="
+            px-3 py-1 rounded border
+            bg-gray-200 text-gray-900
+            dark:bg-gray-800 dark:text-gray-100
+            border-gray-900 dark:border-gray-100
+            transition-colors duration-200
+            "
         >
             {darkMode ? "Escuro" : "Claro"}
         </button>
