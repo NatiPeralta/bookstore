@@ -1,9 +1,0 @@
-body {
-  background-color: #faf6f1; /* light padrão */
-  color: #222;
-}
-
-body.dark {
-  background-color: #222; /* dark mode */
-  color: #faf6f1;
-}
