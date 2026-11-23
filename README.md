@@ -40,7 +40,7 @@ Aplicação web desenvolvida como desafio prático do programa de formação **D
 
 Nati Peralta
 
-Desenvolvedora Front-end
+Desenvolvedora Full Stack
 
     GitHub: @NatiPeralta
 
